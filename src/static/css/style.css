@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: .5em;
+    width: 100%;
+}
+
+.header-link{
+    color: black;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: .5em 0;
+    color:white;
+    box-shadow: 1px 1px 3px #D6D6D6;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1, h2 {
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+h3 {
+    margin-bottom: 2px;
+}
+
+p {
+    margin-top: 0;
+    font-size: .9em;
+}
+
+header {
+    box-shadow: 2px 2px 3px -3px gray;
+    padding: 1em;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    /* margin: auto; */
+    padding: 1em;
+}
+
+.primary {
+    background-color: #14AE5C;
+}
+.primary:hover {
+    background-color: #009951;
+}
+.danger {
+    background-color: #EC221F;
+}
+.danger:hover {
+    background-color: #C00F0C;
+}
+.novo-evento {
+    margin: 1em 0;
+    padding: 1em 2em;
+}
+
+.ver-mais {
+    width: 100%;
+}
+
+.eventos-ativos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.evento {
+    border: 1px solid #D6D6D6;
+    /* width: 25%; */
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.evento-img {
+    width: 100%;
+    background-color: #14AE5C;
+    flex-grow: 2;
+
+}
+.evento-img img {
+    width: 100%;
+}
+.evento-info {
+    padding: .5em;
+}
+.evento-container {
+    height: 50%;
+}
+.evento-container p {
+    margin: .5em 0;
+}
+.editar-btn, .deletar-btn {
+    padding: 1em 2em;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    gap:.3em;
+}
+input {
+    width: 100%;
+}

@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     router();
 });
 
-function fazerRequisicao(method = "POST", id = null) {
+function fazerRequisicao(method = "POST", id = "") {
     let msg;
     switch(method) {
         case "POST":
@@ -111,7 +111,7 @@ function fazerRequisicao(method = "POST", id = null) {
             break;
     }
 
-    fetch(` http://localhost:5050/events/${id}`, {
+    fetch(` https://calendario-eventos-2h6z.onrender.com/events/${id}`, {
         method: method,
         headers: {
             'Content-Type': 'application/json'

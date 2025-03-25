@@ -8,7 +8,7 @@ export default class extends AbstractView {
     }
 
     async getHtml() {
-        const response = await fetch('http://localhost:5050/events')
+        const response = await fetch('https://calendario-eventos-2h6z.onrender.com/events')
         const eventos = await response.json();
         const evento = eventos.find((evento) => evento._id == this.params.id)
 
